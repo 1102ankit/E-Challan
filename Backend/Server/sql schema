@@ -1,0 +1,38 @@
+CREATE SCHEMA `echallan` ;
+
+CREATE TABLE `echallan`.`new_table` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `challan_no` VARCHAR(45) NOT NULL,
+  `challan_date` DATETIME NULL,
+  `dl_rc` VARCHAR(45) NULL,
+  `amount` INT NULL,
+  `payment_source` VARCHAR(45) NULL,
+  `challan_print` VARCHAR(45) NULL,
+  `recipt` VARCHAR(45) NULL,
+  `accused_name` VARCHAR(45) NULL,
+  `payment` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC));
+
+
+CREATE TABLE `echallan`.`tbl_user_car` (
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  `VeichelNumber` VARCHAR(15) NOT NULL,
+  `UserId` INT NOT NULL,
+  PRIMARY KEY (`Id`),
+  UNIQUE INDEX `Id_UNIQUE` (`Id` ASC));
+
+CREATE TABLE `echallan`.`tbl_challan` (
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  `VeichelNumber` VARCHAR(45) NOT NULL,
+  `OffenceDate` DATE NULL,
+  `ChallanNumber` VARCHAR(45) NULL,
+  `Fees` INT NOT NULL,
+  `Evidence` TEXT NULL,
+  `Status` VARCHAR(1) NOT NULL DEFAULT 'u',
+  `Offence` TEXT NULL,
+  PRIMARY KEY (`Id`),
+  UNIQUE INDEX `Id_UNIQUE` (`Id` ASC));
+
+ALTER TABLE `echallan`.`tbl_user_car` 
+CHANGE COLUMN `VeichelNumber` `VeichleNumber` VARCHAR(15) NOT NULL ;

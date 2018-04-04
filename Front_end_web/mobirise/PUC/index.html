@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PUC Form</title>
+    <style>
+            .container {
+                max-width: 500px;
+                max-height: 400px;
+                border: solid 3px green;
+                background-color: lightgreen;
+                border-radius: 5px;
+                margin-left:200px;
+            }
+
+            .Heading_box .row h2{
+                
+                text-align: center;
+                padding: 0px;
+                margin-top: 5px ;
+                margin-bottom: 3px ;
+                color: green;
+                
+            }
+            .Heading_box .row h5{
+                padding: 0px;
+                  text-align: center;
+                  margin-top: 0px;
+                  color :black;
+            }
+    .table-bordered th{
+        text-align: left;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+
+    .table-bordered th input {
+        border-radius: 7px;
+        width: 100%;
+    }
+  </style>
+
+</head>
+<body>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+ <div class="container">
+    <div class="Heading_box">
+        <div class="row">
+            <h2>CHATTISGARH MOTOR </h2>
+            <h2>VEHICLE DEPARTMENT </h2>
+        </div>
+        <div class="row">
+            <h5>POLLUTION TEST CERTIFICATE</h5>
+        </div>
+     </div>
+     <div class="Serial_number">
+        <label></label>
+    </div>
+   <div class="Table_outer">
+         <div class="row">
+             <table class="table-bordered">
+                 <tr> 
+                     <th style="width:250px"> Serial Number</th>
+                     <th><input type="text" id="SNo" placeholder="Serial Number"> </th>
+                 </tr>
+                 <tr> 
+                    <th>Vehicle No</th>
+                    <th><input type="text" id="VehicleNo" placeholder="Vehicle No"> </th>
+                 </tr>
+                 <tr> 
+                    <th>Date Of Issue</th>
+                    <th><input type="text" id="DOI" placeholder="Date OF Issue"> </th>
+                 </tr>
+                 <tr> 
+                    <th> Date of Expiry</th>
+                    <th><input type="text" id="DOE" placeholder="Date OF Expiry"> </th>
+                </tr>
+                <tr> 
+                        <th> Emmission Test Result</th>
+                        <th><input type="text" id="ETR" placeholder="Test Results"> </th>
+                    </tr>
+         </table>
+
+        </div> 
+    </div>
+ </div>
+
+
+</body>
+</html>

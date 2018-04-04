@@ -1,0 +1,2 @@
+Copy the complete form code and the css and js files.
+change the width in the css file.

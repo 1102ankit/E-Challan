@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User_Profile</title>
+ 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        #User_Img{
+            border-radius : 50%;
+            margin:0 auto;
+            height: 200px;
+            width : 200px;
+        }
+.headH {
+
+    background-color: pink;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-mg-5">
+          <img id= "User_Img" src="../profileoftheuser/assests/Images/img_user.png" alt="Avatar">
+      </div>
+
+      <div class="col-lg-8 col-mg-7 align-center">
+          <br><br>
+          <h1 Id = "User_Name" style="font-size:100px ; color:lightcoral "></h1>
+     </div>
+   </div> 
+
+   <div class="row">
+      <div class="col-lg-8 col-ms-8" style="margin-left:230px">
+    <table class="table borderless"> 
+         <tr> 
+            <th>Phone No</th>
+            <th Id="User_No"> </th>
+         </tr>
+
+         <tr> 
+            <th>Email</th>
+            <th id="User_Email"> </th>
+         </tr>
+         <tr> 
+            <th>Address</th>
+            <th id="User_Address"> Mnaya Apartment, Sec 7, Noida<th>
+         </tr>
+         <tr> 
+            <th>DL No.</th>
+            <th>DL8C110026128</th>
+         </tr>
+
+         <tr> 
+                <th>Adhar No.</th>
+                <th>125965665545</th>
+         </tr>
+
+    </table>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+    <table class="table table-striped ">
+                    <thead class="headH">
+                      <tr>
+                        <th scope="col">Challan No.</th>
+                        <th scope="col">Vehicle No.</th>
+                        <th scope="col">Offence Date</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Fee</th>
+                        <th scope="col">Offence Committed</th>        
+                        <th scope="col">Evidence</th>        
+                      
+                      </tr>
+                    </thead>
+                    <tbody id="row">
+                        
+                   
+                    </tbody>
+                  </table>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
